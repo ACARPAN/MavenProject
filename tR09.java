@@ -30,7 +30,7 @@ public class tR09 {
 	@Test(dataProvider = "loginData")
 	public void LoginOne(String username, String pwd) {
 
-		System.setProperty("webdrive.chrome.driver", "C:\\Users\\offic\\OneDrive\\Desktop\\Chrome12.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\offic\\Downloads\\chromedriver_win32 (5)\\chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--remote-allow-origins=*");
 		driver = new ChromeDriver(options);
